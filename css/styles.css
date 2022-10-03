@@ -1,0 +1,142 @@
+@import url("./fonts.css");
+@import url("./navigation.css");
+@import url("./home.css");
+@import url("./resume.css");
+@import url("./projects.css");
+@import url("./card.css");
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #f5eee6;
+}
+
+:root {
+    /* Fonts */
+    --ff-main: ;
+    --ff-primary: 'Advent Pro', sans-serif;
+    --ff-secondary: 'Raleway Dots', cursive;
+    --ff-body: 'Source Code Pro', monospace;
+    --ff-time: 'Rubik Dirt', cursive;
+    /* size */
+    --fs-h1: ;
+    --fs-h2: ;
+    --fs-body: ;
+    /* Colors */
+    --bg-dark: #131313;
+    /* Layout */
+    --section-max-width: 1000px;
+    --90-width: 90%;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-dark);
+    font-family: var(--ff-body);
+    font-family: 'Neue';
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    /* border: 1px solid purple; */
+    width: var(--90-width);
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 90vh;
+    display: flex;
+    margin-bottom: 3em;
+}
+
+/* UTILS */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.migra {
+    font-family: 'Migra';
+}
+
+.title {
+    font-size: 2rem;
+    /* text-align: center; */
+    margin-bottom: .5em;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    height: 1px;
+    width: 40%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* BUTTON  */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #f5eee6;
+    border-radius: 2em;
+    padding: .5px 8px;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    transition: transform 200ms ease-in;
+}
+
+.primary-btn {
+    width: 40%;
+    line-height: 1.75em;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border-color: rebeccapurple;
+    transform: scale(1.15);
+}
+
+@media (min-width: 700px) {
+    .btn {
+        font-size: 1.5em;
+    }
+
+}
+
+/* BUTTON  */
+
+
+
+/* FOOTER */
+footer {
+    background: black;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    padding: .5em;
+}
+
+footer li {
+    margin-left: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+}

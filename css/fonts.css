@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: 'Maelstrom';
+    src: url(../fonts/TestMaelstromSans-Bold.otf);
+}
+@font-face {
+    font-family: 'Moycen';
+    src: url(../fonts/Moycen-Regular.ttf) format("trueType");
+    
+}
+@font-face {
+    font-family: 'TuskerBold';
+    src: url(../fonts/TuskerGrotesk-Bold.ttf) format("trueType");
+}
+@font-face {
+    font-family: 'Neue';
+    src: url(../fonts/NeueMontreal-Medium.otf) format("trueType");
+}
+@font-face {
+    font-family: 'Migra';
+    src: url(../fonts/Migra-Extrabold.otf);
+}
+@font-face {
+    font-family: 'Migra-light';
+    src: url(../fonts/Migra-Extralight.otf);
+}

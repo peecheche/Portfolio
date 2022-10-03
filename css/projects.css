@@ -1,0 +1,27 @@
+
+.projects-container {
+    /* border: 1px solid blue; */
+    width: 100%;
+}
+
+.project-title {
+    /* font-size: 2rem; */
+    text-align: right;
+    margin-bottom: .25em;
+}
+
+.project {
+    /* border: 1px solid yellow; */
+    margin-bottom: 1.5em;
+    transition: all 500ms ease-in-out;
+}
+
+.project:hover > img {
+    cursor: pointer;
+    /* width: 90%; */
+}
+
+
+@media (min-width: 700px) {
+    
+}
