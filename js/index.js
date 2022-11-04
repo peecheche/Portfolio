@@ -31,16 +31,30 @@ setInterval(() => {
     month.textContent = formatMonth(now)
 }, 200)
 
+const hiddenElements = document.querySelectorAll(".hidden")
 
-const hoverEffect = document.getElementById("#hover-effect")
-let homeElement = document.getElementById("#home")
-
-hoverEffect.addEventListener("mouseover", () => {
-    console.log("HI")
-    home.style.backgroundimage = "url(../images/pokekai.png)"
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    });
 })
-hoverEffect.addEventListener("mouseleave", () => {
-    console.log("BYE")
 
-    home.style.backgroundimage= null
-})
+hiddenElements.forEach((el) => observer.observe(el))
+
+// const hoverEffect = document.getElementById("#hover-effect")
+// let homeElement = document.getElementById("#home")
+
+// hoverEffect.addEventListener("mouseover", () => {
+//     console.log("HI")
+//     home.style.backgroundimage = "url(../images/pokekai.png)"
+// })
+// hoverEffect.addEventListener("mouseleave", () => {
+//     console.log("BYE")
+
+//     home.style.backgroundimage= null
+// })
+

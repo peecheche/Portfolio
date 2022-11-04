@@ -1,0 +1,39 @@
+
+
+footer {
+    background: black;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    padding: .5em;
+}
+
+footer li {
+    margin: 1em;
+    display: block;
+}
+
+footer ul li i {
+    font-size: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer-container {
+    padding: 1.5em;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-col {
+    display: flex;
+    align-items: center;
+}
